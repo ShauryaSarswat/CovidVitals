@@ -1,0 +1,29 @@
+1.COVID RESOURCES
+2. ALL -HOME - HOME PAGE
+   ALL -ABOUT - ABOUT PAGE
+   ALL -PROBLEMS -> NEW PROBLEM                       ->EXSISTING PROBLEMS
+                    LINK                              SAME
+                    ->PROBLEM                         ->PRE ENTERED
+                                                      ->SOLVED - DELETE
+                    ->PROBLEM DESCRIPTION           
+                    ->LOCATION
+                    ->CONTACT 
+                    ->BLOOD GROUP
+                    ->SEX
+                    ->NAME
+                    ->AGE
+                    ->HOSPITAL
+                    ->ADMITTED STATUS
+    ALL-VACCINATED -> NEW VACCINE                       ->EXSITING VACCINATEDS
+                       ->1 - YELLLOW
+                       ->2 - GREEN
+                       NO OF VACCINE
+                       DATE 
+                       A NOTE FOR OTHERS
+    ALL -DEVELOPERS_CONTACTS
+    ALL -JOIN US PAGE  ->NAME LOCATION CONTACT SUPPLIES
+3. GALLERY
+   ->ONE LINERS 
+   ->ONE PHOTOGRAPH
+
+AS SOON AS POSSIBLE MEREKO PHOTOS LAKE DE

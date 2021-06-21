@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+<div class="container  pb-5">
+<% problems.forEach(function(problems){ %>
+<div class="card " style="padding: 30px;margin: 30px;">
+  <a href="/problems/<%= problems._id %>"><h5 class="card-title" style="font-size: 3rem;font-family: 'Staatliches', cursive;text-decoration: none;color: black;"><%= problems.problem %></h5>
+  <span class="text-muted mb-3" style="font-size: 1.25rem;"><%= problems.date%></span>
+  <img src="<%= problems.coverimage %>" class="card-img-top" alt="...">
+  <br>
+<p class="text-muted text-left mt-5"style="font-size: 1.7rem;font-weight: 500;font-family: 'Dancing Script', cursive;"><%= problems.Description.substring(0,300) %>.................</p>
+<span id="readme"><a href="/problems/<%= problems._id %>"><b>READ ME</b></a></span>
+</div></a>
+<% }); %>
+</div>
+<%- include("partials/footer2") %>
