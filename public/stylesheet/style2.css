@@ -1,0 +1,21 @@
+.jumbotron
+{
+    background: url(/images/banner.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    background:url('./Images/Jumbo.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    width:100%;
+    position:absolute;
+    top:0;
+    z-index:-100;
+    display:flex;
+    display-direction:column;
+    justify-content:center;
+    align-items:center;
+}
