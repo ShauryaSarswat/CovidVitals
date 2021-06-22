@@ -8,10 +8,6 @@ mongoose.connect('mongodb://localhost:27017/problems', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
-mongoose.connect('mongodb://localhost:27017/vaccines',{
-	useNewUrlParser : true,
-	useUnifiedTopology : true
-});
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 //Schema for problems
@@ -28,13 +24,9 @@ var problemSchema = new mongoose.Schema({
  content : String,
  date : Date
 });
-var vaccineSchema = new mongoose.Schema({
-	vaccine : String,
-	age : Number,
-	experience : String
-});
+
 var problems = mongoose.model("problems", problemSchema);
-var vaccines = mongoose.model("vaccines", vaccineSchema);
+;
 app.set("view engine", "ejs");
 app.get("/",function(req, res){
 	
@@ -56,34 +48,12 @@ app.get("/problems/createNew", function(req, res){
 app.get("/about",function(req, res){
    res.render("about");
 });
-app.get("/vaccines/createNew", function(req, res){
-	res.render("new2");
-});
+
 app.get("/vaccines",function(req, res){
 	res.render("vaccines");
 });
 app.get("/voice",function(req, res){
 	 res.render("voice");
-});
-app.post("/vaccines",function(req, res){
-var vaccine = req.body.vaccine;
-var age = req.body.age;
-var experience = req.body.experience;
-
-var newVaccine = {
-	vaccine : vaccine,
-	age : age,
-	experience : experience
-};
-vaccines.create(newVaccine,function(err, vaccines){
-	if(err){
-		console.log(err);
-	}
-	else{
-		res.redirect("/vaccines");
-	}
-});
-
 });
 app.post("/problems", function(req, res){
 // 	problem : String,
