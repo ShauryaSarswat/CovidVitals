@@ -1,23 +1,12 @@
 <%- include ("partials/header2") %>
 <div class="container" style="margin-top: 40px;">
- <form action="/problems" method="POST" class="text-center text-light" style="width: 90%; margin: auto;">
- <h1 style="font-weight: 300; font-size: 2rem">Create New Blog Post</h1>
-    <input class="form-control mt-1 mb-1" type="text" name="problem" placeholder="problem">
-    <input class="form-control mt-1 mb-1" type="text" name="location" placeholder="location">
-    <textarea class="form-control" aria-label="With textarea" placeholder="Description" name="Description" style="height:40px;"></textarea>
-    <input class="form-control mt-1 mb-1" type="text" name="contact" placeholder="contact">
-    <input class="form-control mt-1 mb-1" type="text" name="bloodGroup" placeholder="bloodGroup">
-    <input class="form-control mt-1 mb-1" type="text" name="name" placeholder="name">
-    <input class="form-control mt-1 mb-1" type="text" name="age" placeholder="age">
-    <input class="form-control mt-1 mb-1" type="text" name="hospital" placeholder="hospital">
-    <input class="form-control mt-1 mb-1" type="text" name="admittedStatus" placeholder="admittedStatus">
-
-    <input type="date" placeholder="date" name="date" style="width: 100% ;padding:5px;margin-bottom:10px;color: gray">
-  <textarea class="form-control" aria-label="With textarea" placeholder="Problem Statemet" name="content" style="height:70px;"></textarea>
+    <form action="/vaccines" method="POST" class="text-center text-light" style="width: 90%; margin: auto;">
+    <h1 class="display-4 text-dark">Add your experience with the Vaccine</h1>
+       <input class="form-control mt-1 mb-1" type="text" name="vaccine" placeholder="Name">
+       <input class="form-control mt-1 mb-1" type="text" name="age" placeholder="age">
+       <textarea class="form-control" aria-label="With textarea" placeholder="Your Experience with the vaccine comes here" name="experience" style="height:500px;"></textarea>
      <button class="btn btn-primary mt-3 mb-3" style="width: 100%">Create Post</button>
-     <br>
-       
- </form>
+    </form>
 
 </div>
 <footer class="text-center text-white" style="background-color: #f1f1f1;">

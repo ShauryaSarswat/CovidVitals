@@ -1,32 +1,18 @@
-<%- include("partials/header") %>
- <nav class="navbar justify-content-center  mb-5">
-    <ul class="nav ">
-  <li class="nav-item">
-   <a class="nav-link" href="/problems"><i class="arrow alternate circle left icon" style="font-size: 2rem;color: white;"></i><span class="sr-only">(current)</span></a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/about"><i class="user circle icon" style="font-size: 2rem;color: steelblue;"></i></a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#"><i class="github icon" style="font-size: 2rem;color: purple;"></i></a>
-  </li>
-  
-  <li class="nav-item">
-     <a class="nav-link " href="mailto:shauryasarswatpersonalAC@gmail.com"><i class="envelope icon" style="font-size: 2rem;color: red;"></i></a>
-  </li>
-  <li class="nav-item">
-   <a class="nav-link " href="https://bossinthechair.blogspot.com/"><i class="blogger icon" style="font-size: 2rem;color: orange;"></i></a>
-  </li>
+<%- include("partials/header3") %>
+ <div class="container">
+   <div class="card">
+     <div class="p-5 text-center">
+       <h1 class="display-4"><%- problems.problem %></h1>
 
-</ul>
-</nav>
-<div class="container bg-light mt-5 mb-5 rounded-lg pb-5 p-5">
-<p class="text-center display-1 mb-0 pb-0" style="font-family: 'Staatliches', cursive;color: black;"><%= problems.title %><br>
-<small class=" text-center text-muted m-0 "style="font-size: 3rem;"><%= problems.author %></small></p>
-<br>
-<img src="<%= problems.coverimage %>" style=" height: 600px; width: 100%">
-<p style="font-size: 1.7rem;font-weight: 500;font-family: consolas;margin: 50px;"><%- problems.content %> </p>
-<br>
-<small style="float: right;word-spacing: 5px;">Uploaded On : <%= problems.date.toDateString() %> TYPE : <%= problems.type %></small>
-</div>
-<%- include("partials/footer2") %>
+       <p class="lead">
+         <%- problems.Description %>
+       </p>
+     </div>
+     <p class="lead text-muted">
+       <p><%- problems.name %></p>
+       <p><%- problems.age %></p>
+     </p>
+     
+   </div>
+ </div>
+<%- include("partials/footer1") %>

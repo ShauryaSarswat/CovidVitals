@@ -1,9 +1,5 @@
-.jumbotron
-{
+body{
     background: url(/images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-.card a{
-    text-decoration: none;
 }
