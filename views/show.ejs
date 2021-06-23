@@ -1,16 +1,25 @@
 <%- include("partials/header3") %>
- <div class="container">
-   <div class="card">
-     <div class="p-5 text-center">
+ <div class="container mt-5">
+   <div class="card p-5">
+     <a href="/problems" class="nav-link display-4"><</a>
+     <div class="text-center">
        <h1 class="display-4"><%- problems.problem %></h1>
 
        <p class="lead">
          <%- problems.Description %>
        </p>
+       <p class="text-muted">
+        <%- problems.location %>
+       </p>
      </div>
      <p class="lead text-muted">
-       <p><%- problems.name %></p>
-       <p><%- problems.age %></p>
+       <p><span style="font-weight: bold;">NAME:</span> <%- problems.name %></p>
+       <p><span style="font-weight: bold;">PAITIENT AGE:</span> <%- problems.age %></p>
+       <p><span style="font-weight: bold;">PAITIENT BLOOD GROUP:</span> <%- problems.bloodGroup %></p>
+       <p><span style="font-weight: bold;">PAITIENT ADMITTED/NOT ADMITTED:</span> <%- problems.admittedStatus %></p>
+       <p><span style="font-weight: bold;">ADMISSION DATE:</span> <%- problems.date %></p>
+       <p><span style="font-weight: bold;">PAITIENT HOSPITAL:</span> <%- problems.hospital %></p>
+       <p id="stylizeCalibri"><%- problems.content %></p>
      </p>
      
    </div>

@@ -1,0 +1,19 @@
+#stylizeCalibri{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+#teams{
+    height: 250px;
+    width: 250px;
+}
+#teamlink{
+    text-decoration: none;
+}
+.card
+{
+    border: none;
+}
+#pdfframe
+{
+    height: 800px;
+}

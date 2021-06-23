@@ -101,7 +101,7 @@ app.post("/problems", function(req, res){
 			res.redirect("/problems");
 		}
 	});});
-   
+    
 
     app.get("/problems/:id", function(req, res){
  	problems.findById( req.params.id , function(err, problemInfo){
