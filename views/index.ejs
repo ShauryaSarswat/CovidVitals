@@ -3,7 +3,7 @@
 <% problems.forEach(function(problems){ %>
 <div class="card shadow-lg" style="padding: 30px;margin: 30px;">
   <a href="/problems/<%= problems._id %>"><h5 class="card-title"> <%= problems.problem %></h5>
-  <span class="text-muted " >Admitted Since : <%= problems.date%></span>
+  <span class="text-muted " >Admitted Since : <%= problems.date.toDateString() %></span>
 <p class="text-muted text-left"><%= problems.Description%></p>
 <span id="readme"><a href="/problems/<%= problems._id %>"><b>Paitient Technicalities</b></a></span>
 </div></a>
